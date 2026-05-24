@@ -309,14 +309,41 @@
 
         /* ── Mobile ── */
         @media (max-width: 768px) {
-            nav { padding: 16px 20px; }
-            .nav-links { gap: 16px; }
+            nav { padding: 14px 16px; }
+            /* 手机端隐藏导航链接，只保留 logo 和下载按钮 */
+            .nav-links a:not(.btn-nav) { display: none; }
+            .nav-links { gap: 0; }
+            .btn-nav { padding: 9px 16px; font-size: 13px !important; }
+
+            .hero { padding: 100px 20px 60px; }
+            .hero h1 { letter-spacing: -1px; }
+            .hero p { font-size: 16px; }
+            .hero-btns { flex-direction: column; align-items: center; gap: 12px; }
+            .btn-primary, .btn-secondary { width: 100%; max-width: 300px; justify-content: center; }
+
+            .phone { width: 200px; height: 400px; }
+            .phone-wrap { margin-top: 48px; }
+
             .section { padding: 60px 20px; }
+            .section-title { font-size: 28px; }
+            .features-grid { grid-template-columns: 1fr; gap: 14px; }
+            .feature-card { padding: 24px; }
+
             .steps { flex-direction: column; gap: 32px; }
             .steps::before { display: none; }
-            .steps-wrap { padding: 32px 20px; }
-            footer { padding: 32px 20px; flex-direction: column; align-items: flex-start; }
+            .steps-wrap { padding: 28px 20px; }
+
             .cta { padding: 60px 20px; }
+            .cta h2 { font-size: 32px; }
+
+            footer { padding: 32px 20px; flex-direction: column; align-items: flex-start; gap: 20px; }
+            .footer-links { flex-wrap: wrap; gap: 16px; }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 38px; }
+            .badge { font-size: 11px; padding: 5px 12px; }
+            .section-label { font-size: 11px; }
         }
     </style>
 </head>
