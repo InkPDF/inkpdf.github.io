@@ -22,7 +22,7 @@
 </head>
 <body>
     <h1>Privacy Policy for InkPDF</h1>
-    <p class="updated">Effective date: August 14, 2026 · Last updated: August 14, 2026</p>
+    <p class="updated">Effective date: August 14, 2026 · Last updated: August 15, 2026</p>
 
     <p>This Privacy Policy explains how InkPDF ("we", "us", or "our") accesses, uses, stores, and shares information when you use the InkPDF Android application (the "App"). InkPDF is a local document reader and editor for PDF, Word, Excel, and PowerPoint files.</p>
 
@@ -46,9 +46,11 @@
     <p>The App includes or may use the following services:</p>
     <ul>
         <li><strong>Google Play services and ML Kit:</strong> Used for document scanning and on-device text recognition (OCR). Required components or recognition models may be downloaded by Google Play services. Google may process technical service information under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
-        <li><strong>Firebase Remote Config:</strong> May be used to retrieve non-document app configuration. It is never used to upload document contents. See <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a>.</li>
+        <li><strong>Firebase Analytics:</strong> Used to understand App usage and improve reliability. It may process app interactions, device and operating-system information, app version, approximate region, and identifiers provided by Google services. It does not receive document contents from InkPDF.</li>
+        <li><strong>Firebase Crashlytics:</strong> Used to receive crash diagnostics such as stack traces, app state, app version, device model, operating-system version, and crash-related identifiers. It does not intentionally receive document contents.</li>
+        <li><strong>Firebase Remote Config:</strong> Used to retrieve non-document App configuration. It is never used to upload document contents.</li>
     </ul>
-    <p>The current version does not display advertising, does not use AdMob, and does not enable paid subscriptions. Firebase Analytics and Firebase Crashlytics are not enabled in the current release. If analytics, advertising, cloud services, or subscriptions are enabled in a future version, this policy and the relevant in-app disclosures will be updated before activation.</p>
+    <p>Firebase services are provided by Google and are governed by <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The current version does not display advertising, does not use AdMob, and does not enable paid subscriptions. If advertising, document cloud services, or subscriptions are enabled in a future version, this policy and the relevant in-app disclosures will be updated before activation.</p>
 
     <h2>4. How Information Is Used</h2>
     <ul>
@@ -56,10 +58,11 @@
         <li>To open, render, edit, annotate, sign, organize, convert, and export documents.</li>
         <li>To provide OCR, document scanning, recovery, recent-file, and favorite features.</li>
         <li>To diagnose crashes from logs stored locally on your device.</li>
+        <li>To measure App usage, diagnose remotely reported crashes, improve reliability, and retrieve non-document configuration through Firebase.</li>
     </ul>
 
     <h2>5. Sharing</h2>
-    <p>We do not sell your personal information or document contents. Documents leave the App only when you choose an Android action such as Share, Open with, Export, or Save to a location managed by another application. Third-party services listed above may receive limited technical service data according to their own privacy policies, but InkPDF does not intentionally send document contents to them except content you explicitly submit to the Google document scanner flow.</p>
+    <p>We do not sell your personal information or document contents. Documents leave the App only when you choose an Android action such as Share, Open with, Export, or Save to a location managed by another application. Google and Firebase may receive the technical, analytics, crash, and service data described above according to their privacy terms, but InkPDF does not intentionally send document contents to Firebase.</p>
 
     <h2>6. Permissions</h2>
     <p>The App may request the following permissions:</p>
@@ -69,7 +72,7 @@
     </ul>
 
     <h2>7. Retention and Deletion</h2>
-    <p>Recent-file records and app settings remain until you clear them, clear the App's storage, or uninstall the App. App-private imports, drafts, and local crash logs are normally removed when App storage is cleared or the App is uninstalled; Android backup may restore eligible app data if device backup is enabled. Files exported to shared storage must be deleted by you through InkPDF or a file manager. You can revoke storage access at any time in Android Settings.</p>
+    <p>Recent-file records and app settings remain until you clear them, clear the App's storage, or uninstall the App. App-private imports, drafts, recent-file references, favorites, bookmarks, signatures, and local crash logs are excluded from InkPDF's Android backup rules. Limited non-sensitive interface preferences may be restored through Android backup or device transfer. Files exported to shared storage must be deleted by you through InkPDF or a file manager. Firebase data retention is governed by Google's applicable settings and policies. You can revoke storage access at any time in Android Settings.</p>
 
     <h2>8. Children's Privacy</h2>
     <p>The App is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
